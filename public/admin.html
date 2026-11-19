@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
 <meta name="theme-color" content="#102b52"><title>لوحة إدارة أنجزها</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700;800&display=swap');
@@ -26,5 +26,5 @@
 <section class="section" id="pages"><div class="heading"><div><h1>الصفحات والمحتوى</h1><p>صفحات الموقع الأساسية</p></div></div><div class="card"><div class="row"><span>سياسة الخصوصية</span><span class="pill off">تحتاج مراجعة ونشر</span></div><div class="row"><span>تواصل معنا</span><span class="pill off">تحتاج إعداد</span></div><div class="row"><span>عن أنجزها</span><span class="pill">موجودة بالواجهة</span></div></div></section>
 <section class="section" id="settings"><div class="heading"><div><h1>إعدادات الموقع</h1><p>إعدادات عامة وهوية الموقع</p></div></div><div class="card"><div class="formgrid"><div class="field"><label>اسم الموقع</label><input value="أنجزها"></div><div class="field"><label>الاسم الإنجليزي</label><input value="ANJEZHA"></div><div class="field"><label>لغة الموقع</label><select><option>العربية والإنجليزية</option></select></div><div class="field"><label>لون الهوية</label><input value="#102b52"></div></div><button class="btn" onclick="alert('سيتم تفعيل الإعدادات بعد ربط قاعدة البيانات.')">حفظ الإعدادات</button></div></section>
 </main></div></div>
-<script>function go(id){document.querySelectorAll('.section').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x.dataset.page===id));window.scrollTo(0,0)}document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>go(b.dataset.page)));document.getElementById('logout').addEventListener('click',async()=>{await fetch('/api/owner/logout',{method:'POST',credentials:'same-origin'});location.replace('/owner-entry-7f3a91c8d2')});fetch('/api/owner/me',{credentials:'same-origin'}).then(r=>{if(!r.ok)location.replace('/owner-entry-7f3a91c8d2')}).catch(()=>location.replace('/owner-entry-7f3a91c8d2'));</script>
+<script>function go(id){document.querySelectorAll('.section').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x.dataset.page===id));window.scrollTo(0,0)}document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>go(b.dataset.page)));document.getElementById('logout').addEventListener('click',async()=>{await fetch('/api/owner/logout',{method:'POST',credentials:'same-origin'});location.replace('/owner-portal-8f2c9d7a41b6e305c8f0a2d79e4b6135')});fetch('/api/owner/me',{credentials:'same-origin'}).then(r=>{if(!r.ok)location.replace('/owner-portal-8f2c9d7a41b6e305c8f0a2d79e4b6135')}).catch(()=>location.replace('/owner-portal-8f2c9d7a41b6e305c8f0a2d79e4b6135'));</script>
 </body></html>
