@@ -1,6 +1,12 @@
 {
   "$schema": "https://developers.cloudflare.com/workers/wrangler/config-schema.json",
   "name": "anjezha",
+  "main": "./worker.js",
   "compatibility_date": "2026-11-19",
-  "assets": { "directory": "./public", "not_found_handling": "single-page-application" }
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
+  },
+  "observability": { "enabled": true, "traces": { "enabled": true } }
 }
