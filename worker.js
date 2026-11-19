@@ -1,6 +1,6 @@
 const COOKIE = "anjezha_owner";
 const SESSION_SECONDS = 8 * 60 * 60;
-const OWNER_ENTRY = "/owner-entry-7f3a91c8d2";
+const OWNER_ENTRY = "/owner-portal-8f2c9d7a41b6e305c8f0a2d79e4b6135";
 
 function json(data, status = 200, extra = {}) {
   return new Response(JSON.stringify(data), { status, headers: { "content-type": "application/json; charset=utf-8", "cache-control": "no-store", ...extra } });
