@@ -1,0 +1,6 @@
+{
+  "$schema": "https://developers.cloudflare.com/workers/wrangler/config-schema.json",
+  "name": "anjezha",
+  "compatibility_date": "2026-11-19",
+  "assets": { "directory": "./public", "not_found_handling": "single-page-application" }
+}
